@@ -1,0 +1,63 @@
+*{
+    background-color: rgb(255, 255, 255);
+}
+
+
+    .line{
+        height: 2px;
+        width: 63%;
+        background-color: #000;
+        margin-left: 200px;
+    }
+
+    .head{
+        font-family: 'Segeo UI', 'Trebuchet MS', Arial, sans-serif;
+        font-weight: bold;
+        padding-left: 500px;
+        padding-top: 5%;
+        width: 50%;
+        display: flex;
+    }
+    .row{
+        font-family: Helvetica, sans-serif;
+        display: flex;
+        width: 50%;
+        padding-left: 330px;
+
+    }     
+    .col{
+        width: 85%;
+    }
+
+    .coll{
+        font-family: Helvetica, sans-serif;
+        display: flex;
+        width: 50%;
+        padding-top: 0%;
+        padding-left: auto;
+    }
+    
+    .image{
+        width: 200px;
+        height: auto;
+        
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+
+    .last{
+        font-family: 'Segeo UI', 'Trebuchet MS', Arial, sans-serif;
+        font-weight: bold;
+        padding-left: 400px;
+        padding-top: 3%;
+        width: 50%;
+        display: flex;
+    }
+
+    .info{
+        font-family: 'Segeo UI', 'Trebuchet MS', Arial, sans-serif;
+        font-weight: bold;
+        padding-left: 458px;
+        width: 50%;
+        display: flex;
+    }
