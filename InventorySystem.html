@@ -5,15 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+    <style>
+        table{
+            border-collapse:separate ;
+            margin: 0 auto;
+            max-width: 810px;
+            width: 100%;
+        }        
+    </style>
+
 <body>
-    <table>
+    <table border="1">
+    <thead>
+        <tr bgcolor="darkgreen">
+            <th colspan='6'>INVENTORY SYSTEMS</th>
+</tr>
+
+        <tr bgcolor="gray">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Supplier</th>
+            <th>Date</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
         <tr>
-            <th>INVENTORY SYSTEMS</th>
+            <td>10001</td>
+            <td>Pringles Original Flavor</td>
+            <td>1000</td>
+            <th bgcolor="green" rowspan="8" align="center">Kellogg's</th>
+            <td rowspan="2" align="center">5/14/2025</td>
+            <td rowspan="8" align="center"><img src="Pringles.jpg" width="70"></td>
         </tr>
 
+         <tr>
+            <td>10002</td>
+            <td>Pringles Salt Vinegar Flavor</td>
+            <td>109</td>
+        </tr>
+        </tr>
 
+         <tr bgcolor="lightgray">
+            <td>10003</td>
+            <td>Pringles BBQ Flavor</td>
+            <td>389</td>
+            <td rowspan="2" align="center" style="height: 0;">5/15/2025</td>
 
+        </tr>
+
+         <tr bgcolor="lightgray">
+            <td>10004</td>
+            <td>Pringles Sour Cream Flavor</td>
+            <td>607</td>
+        </tr>
+
+         <tr>
+            <td>10005</td>
+            <td>Pringles Cheddar Cheese Flavor</td>
+            <td>589</td> <td rowspan="2" align="center">5/16/2025</td>
+        </tr>
+
+<tr>
+            <td>10006</td>
+            <td>Pringles Ranch Flavor</td>
+            <td>156</td>
+        </tr>
+
+<tr bgcolor="lightgray">
+            <td>10007</td>
+            <td>Pringles Pizza Flavor</td>
+            <td>449</td> <td rowspan="2" align="center">5/17/2025</td>
+        </tr>
+
+<tr bgcolor="lightgray">
+            <td>10008</td>
+            <td>Pringles Cheddar & Sour Cream Flavor</td>
+            <td>456</td>
+        </tr>
     </table>
     
+<div class="Fill">
+    <form name="Name">
+        <p>Your Name*</p>
+        <input type="text" name="name">
+        <p>Email*</p>
+        <input type="text" name="email">
+        <p>Contact Number*</p>
+        <input type="text" name="contact">
+        <p>Message*</p>
+        <textarea></textarea>
+        <p>required field*</p>
+        <input type="submit">
+    </form>
+    </div>
+    </tbody>
 </body>
 </html>
