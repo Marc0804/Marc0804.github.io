@@ -1,0 +1,47 @@
+body{
+    line-height: 4.5;
+}
+
+.name-row{
+    display:flex;
+    gap: 20px;
+}
+
+.name-row input{
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-group{
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+}
+
+.input-group label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input{
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select{
+    width: 250px;
+    height: 45px;
+    font-size: 16px;
+    flex: 1;
+}
+
+button[type="submit"]{
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 6px;
+
+}
