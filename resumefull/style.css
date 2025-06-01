@@ -8,9 +8,10 @@ body{
     background-repeat: no-repeat;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     border: 5px solid rgb(0, 0, 0);
+    box-shadow: 0 0 40px rgb(255, 255, 255, 0.8);
     width: 80%;
     height: 100%;
-    margin: 0 auto;
+    margin: 100px auto;
     padding: 20px;
 }
 
