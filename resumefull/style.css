@@ -1,0 +1,111 @@
+body{
+    background-color: black;
+}
+
+.border{
+    background-image: url("74ec6088-85c0-4528-b663-2e829d3eff3c.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    border: 5px solid rgb(0, 0, 0);
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.artworks{
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 2%;
+}
+
+.profile{
+    background-color: rgb(255, 255, 255, 0.9);
+    border: 5px solid rgb(0, 0, 0);
+    display: flex;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.name{
+    margin-left: 9%;
+    font-size: 40px;
+    align-items: center;
+}
+
+.cate{
+   font-size: 30px;
+   display: flex;
+   flex-direction: column;
+   margin-left: 30%;
+}
+
+.info{
+    font-size: 25px;
+}
+
+.description{
+    background-color: rgb(255, 255, 255, 0.7);
+    border: 5px solid rgb(0, 0, 0);
+    margin-bottom: 2%;
+    padding: 4%;
+    font-size: 24px;
+}
+
+.attach{
+    display: flex;
+    gap: 3%;
+}
+
+.video{
+    background-color: rgb(255, 255, 255, 0.9);
+    border: 5px solid rgb(0, 0, 0);
+    padding: 4%;
+}
+
+.border1{
+    background-color: rgb(255, 255, 255, 0.9);
+    border: 5px solid rgb(0, 0, 0);
+    padding: 4%;
+}
+
+.row2{
+    padding-top: 2%;
+    display: flex;
+}
+
+.border2{
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 5px solid rgb(0, 0, 0);
+    width: 30%;
+    height: 50%;
+}
+
+.arts{
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+.link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.lastrow{
+    display: flex;
+    gap: 3.2%;
+}
+
+.border3{
+    margin-top: 2%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 5px solid rgb(0, 0, 0);
+    padding: 4%;
+}
+
+.image1{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 5px solid rgb(0, 0, 0);
+    padding: 2%;
+}
