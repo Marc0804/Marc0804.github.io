@@ -11,162 +11,118 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <body>
+  <div class="border">
     <form class="row g-3">
-        <h3 style="font-weight: bold;">PERSONAL INFORMATION</h3>
-  <div class="col-md-4">
-    <div class="input-group">
-    <label for="inputEmail4" class="form-label">First Name</label></div>
-    <div class="name-row">
-    <input type="email" class="form-control" id="inputEmail4"></div>
+      <h2 align="center" class="fw-bold">New Employee Registration</h2>
+
+      <div class="col-md-6">
+        <label for="firstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstName">
+      </div>
+
+      <div class="col-md-6">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lastName">
+      </div>
+
+      <div class="col-md-4">
+        <label for="birthMonth" class="form-label">Birth Month</label>
+        <input type="text" class="form-control" id="birthMonth">
+      </div>
+
+      <div class="col-md-4">
+        <label for="birthDay" class="form-label">Birth Day</label>
+        <input type="text" class="form-control" id="birthDay">
+      </div>
+
+      <div class="col-md-4">
+        <label for="birthYear" class="form-label">Birth Year</label>
+        <input type="text" class="form-control" id="birthYear">
+      </div>
+
+      <div class="col-md-6">
+        <label for="gender" class="form-label">Gender</label>
+        <select id="gender" class="form-select">
+          <option selected>Choose...</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="civilStatus" class="form-label">Civil Status</label>
+        <select id="civilStatus" class="form-select">
+          <option selected>Choose...</option>
+          <option>Single</option>
+          <option>Married</option>
+          <option>Divorced</option>
+          <option>Widowed</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+
+      <div class="col-md-6">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone">
+      </div>
+
+      <div class="col-12">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" class="form-control" id="address">
+      </div>
+
+      <div class="col-md-6">
+        <label for="employeeId" class="form-label">Employee ID</label>
+        <input type="text" class="form-control" id="employeeId">
+      </div>
+
+      <div class="col-md-4">
+        <label for="hireMonth" class="form-label">Hire Month</label>
+        <input type="text" class="form-control" id="hireMonth">
+      </div>
+
+      <div class="col-md-4">
+        <label for="hireDay" class="form-label">Hire Day</label>
+        <input type="text" class="form-control" id="hireDay">
+      </div>
+
+      <div class="col-md-4">
+        <label for="hireYear" class="form-label">Hire Year</label>
+        <input type="text" class="form-control" id="hireYear">
+      </div>
+
+      <div class="col-md-6">
+        <label for="position" class="form-label">Position</label>
+        <select id="position" class="form-select">
+          <option selected>Choose...</option>
+          <option>Software Developer</option>
+          <option>Web Designer</option>
+          <option>Data Analyst</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="department" class="form-label">Department</label>
+        <select id="department" class="form-select">
+          <option selected>Choose...</option>
+          <option>HR</option>
+          <option>IT</option>
+          <option>Finance</option>
+        </select>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </div>
+    </form>
   </div>
+</body>
 
-  <div class="col-md-4">
-    <div class="input-group">
-    <label for="inputPassword4" class="form-label">Last Name</label></div>
-    <div class="name-row">
-    <input type="password" class="form-control" id="inputPassword4"></div>
-  </div>
-
-
-
-  <div class="input-group">
-    <div class="input-group">
-        <label for="birth">Date of Birth:</label></div>
-        </div>
-  <div class="col-md-3">
-    <label for="inputCity" class="form-label">Month</label>
-    <div class="name-row">
-    <input type="text" class="form-control" id="inputCity"></div>
-  </div>
-  
-   <div class="col-md-2">
-    <label for="inputZip" class="form-label">Day</label>
-    <div class="name-row">
-    <input type="text" class="form-control" id="inputZip"></div>
-  </div>
-  
-  <div class="col-md-3">
-    <label for="inputZip" class="form-label">Year</label>
-    <div class="name-row">
-    <input type="text" class="form-control" id="inputZip"></div>
-  </div>
-
-
-  <div class="col-8">
-    <div class="input-group">
-    <label for="inputAddress" class="form-label">Gender</label></div>
-    <select id="inputState" class="form-select">
-      <option selected>Choose...</option>
-      <option>Male</option>
-      <option>Female</option>
-    </select>
-  </div>
-
-  <div class="col-8">
-    <div class="input-group">
-    <label for="inputAddress" class="form-label">Civil Status</label></div>
-    <select id="inputState" class="form-select">
-      <option selected>Choose...</option>
-      <option>Single</option>
-      <option>Married</option>
-      <option>Widowed</option>
-      <option>Divorced</option>
-      <option>Annulled</option>
-      <option>Domestic</option>
-      <option>Prefer not to Say</option>
-    </select>
-  </div>
-
-  <div></div>
-   <div class="col-md-4">
-    <div class="input-group">
-    <label for="inputEmail4" class="form-label">Email Address</label></div>
-    <div class="name-row">
-    <input type="email" class="form-control" id="inputEmail4"></div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="input-group">
-    <label for="inputPassword4" class="form-label">Phone Number</label></div>
-    <div class="name-row">
-    <input type="password" class="form-control" id="inputPassword4"></div>
-  </div>
-    
-
-
-  <div class="col-8">
-    <div class="input-group">
-    <label for="inputAddress" class="form-label">Address</label></div>
-    <div class="name-row">
-    <input type="text" class="form-control" id="inputAddress"></div>
-  </div>
-
-  <h3 style="font-weight: bold;">JOB INFORMATION</h3>
-
-
-  <div class="col-8">
-    <div class="input-group">
-    <label for="inputAddress" class="form-label">Employee ID</label></div>
-    <div class="name-row">
-    <input type="text" class="form-control" id="inputAddress"></div>
-  </div>
-
-
-  <div class="input-group">
-        <label for="birth">Date Hired</label>
-        </div>
-  <div class="col-md-3">
-    <label for="inputCity" class="form-label">Month</label>
-    <div class="name-row">
-    <input type="text" class="form-control" id="inputCity"></div>
-  </div>
-  
-   <div class="col-md-2">
-    <label for="inputZip" class="form-label">Day</label>
-    <div class="name-row">
-    <input type="text" class="form-control" id="inputZip"></div>
-  </div>
-  <div class="col-md-3">
-    <label for="inputZip" class="form-label">Year</label>
-    <div class="name-row">
-    <input type="text" class="form-control" id="inputZip"></div>
-  </div>
-
-
-  <div class="col-8">
-     <div class="input-group">
-    <label for="inputAddress" class="form-label">Position</label></div>
-    <select id="inputState" class="form-select">
-      <option selected>Choose...</option>
-      <option>Software Developer</option>
-      <option>Web Designer</option>
-      <option>IT Support Specialist</option>
-      <option>Network Administrator</option>
-      <option>Data Analyst</option>
-    </select>
-  </div>
-
-
-  <div class="col-8">
-     <div class="input-group">
-    <label for="inputAddress" class="form-label">Department</label></div>
-    <select id="inputState" class="form-select">
-      <option selected>Choose...</option>
-      <option>Human Resources</option>
-      <option>Information Technology</option>
-      <option>Finance</option>
-      <option>Marketing</option>
-      <option>Sales</option>
-      <option>Operations</option>
-      <option>Administration</option>
-      <option>Customer Service</option>
-    </select>
-  </div>
-
- 
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </div>
-</form>
+</div>
 </body>
 </html>
