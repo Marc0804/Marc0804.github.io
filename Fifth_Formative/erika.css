@@ -1,0 +1,44 @@
+body{
+    background-image: url("sakura.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.border{
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    border-radius: 10px;
+    border: 5px solid rgb(255, 183, 207);
+    box-shadow: 0 0 40px rgb(255, 255, 255, 0.8);
+    width: 80%;
+    height: 100%;
+    margin: 100px auto; 
+    padding: 20px;
+}
+
+.profile{
+    border-radius: 10px;
+    background-color: rgba(255, 207, 223, 0.5);
+    border: 5px solid rgb(255, 183, 207);
+    display: flex;
+    padding: 2%;
+
+}
+
+.name{
+    font-size: 25px;
+    margin-left: 9%;
+    align-items: center;
+}
+
+.image1{
+    background-color: rgba(255, 136, 192, 0.7);
+    border: 5px solid rgb(255, 183, 207);
+    padding: 2%;
+}
+
+.erikaname{
+   text-align: center;
+   font-size: 30px;
+   padding-bottom: 20px;
+}
