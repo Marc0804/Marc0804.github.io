@@ -376,13 +376,13 @@
   }
 
   .row1 {
-  display: flex; /* Add this */
-  flex-direction: column; /* Stack items vertically */
+  display: flex; 
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
-  padding: 40px; /* Optional: adds space around the content */
+  padding: 40px;
 }
 
 
