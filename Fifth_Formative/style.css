@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+
+.border{
+    background-image: url("74ec6088-85c0-4528-b663-2e829d3eff3c.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 0 0 40px rgb(255, 255, 255, 0.8);
+    width: 80%;
+    height: 100%;
+    margin: 100px auto; 
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
