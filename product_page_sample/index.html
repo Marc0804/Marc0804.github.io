@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Store</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="stay">
+    <div class="top-nav">
+      <img src="logo/pokelogo (1).png" class="logo">
+      <div class="menu">
+        <div class="dropdown">
+          <button class="custom-btn">GO FEST <span class="arrow">▼</span></button>
+          <button class="custom-btn">NEWS</button>
+          <button class="custom-btn">SEASON</button>
+          <button class="custom-btn">EVENT</button>
+          <button class="custom-btn">COMMUNITY</button>
+          <button class="custom-btn">LEADERBOARD</button>
+          <div class="dropdown-menu">
+            <a href="#">Nothing's here</a>
+          </div>
+        </div>
+        <button class="custom-btn">HOME</button>
+        <button class="custom-btn">ABOUT US</button>
+        <button class="custom-btn" id="shop-button" onclick="showShop()">SHOP<span class="arrow">▼</span></button>
+      </div>
+    </div>
+
+    <div class="sub-banner"></div>  
+    <div class="imagecon">
+      <img src="logo/circle.png" width="50px" class="overlapimage">
+    </div>
+    <div class="white-sub-banner"></div>
+  </div>
+
+  <div class="video-banner">
+    <video autoplay muted loop playsinline>
+      <source src="vid/ashh.mp4" type="video/mp4">
+    </video>
+    <div class="fade-top"></div>
+    <div class="fade-bottom"></div>
+    <div class="main-content">
+      <h1 style="color: rgb(18, 64, 84)">The <span style="color: orange;">official</span> Web Store for Pokémon GO</h1>
+      <p style="color: rgb(18, 64, 84)">Discover exclusive offers and earn points with every purchase to unlock special rewards.</p>
+      <button class="sign" style="margin-top: 20px;">Sign In</button>
+    </div>
+  </div>
+
+  <div id="shop-preview">
+    <button class="custom-btn1 active-tab" id="limited-button" onclick="showTab('limited')">Limited Time</button>
+    <button class="custom-btn1" id="ticket-button" onclick="showTab('ticket')">Ticket Bundles</button>
+    <button class="custom-btn1" id="items-b-button" onclick="showTab('items-b')">Item Bundle</button>
+    <button class="custom-btn1" id="items-button" onclick="showTab('items')">Items</button>
+    <button class="custom-btn1" id="coins-button" onclick="showTab('coins')">PokeCoins</button>
+    <button class="custom-btn1" id="daily-button" onclick="showTab('daily')">Daily Bundles</button>
+  </div>
+
+  <div id="limited" class="shop-section" align="center">
+    <img src="logo/limited.png" width="450px">
+    <div class="items">
+      <div class="box">
+        <img src="limited/red.png" width="400px">
+        <div class="card-body">
+          <h3>Go Pass Deluxe: July</h3>
+          <p>Can only be purchased 1 time.</p>
+          <button class="custom-btn2" style="margin-top: 25px;">₱235.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="limited/blue.png" width="400px">
+        <div class="card-body">
+          <h3>Go Pass Deluxe: July + 10 Rank</h3>
+          <p>Can only be purchased 1 time.</p>
+          <button class="custom-btn2" style="margin-top: 25px;">₱289.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="limited/yellow.png" width="400px">
+        <div class="card-body">
+          <h3>Go Pass Deluxe: July + 10 Rank Ultra Ticket Box</h3>
+          <p>Can only be purchased 1 time.</p>
+          <button class="custom-btn2">₱439.00</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="ticket" class="shop-section" style="display: none;" align="center">
+    <h5>Ticket Bundles</h5>
+    <div class="item1">
+      <div class="box">
+        <img src="bund/white.png" width="600px">
+        <div class="card-body" >
+          <h3>Quaxty Community Day Ultra Ticket Box</h3>
+          <p>Can only be purchased 1 time.</p>
+          <button class="custom-btn2">₱59.00</button>
+        </div>
+      </div>
+    
+
+      <div class="box">
+        <img src="bund/vio.png" width="600px">
+        <div class="card-body">
+          <h3>Water Festival Ultra Ticket Box</h3>
+          <p>Can only be purchased 1 time.</p>
+          <button class="custom-btn2" style="margin-top: 29px;">₱149.00</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="items-b" class="shop-section" style="display: none;" align="center">
+    <h5>Item Bundles</h5>
+    <div class="items">
+      <div class="box">
+        <img src="mys/lapras.png" width="1200px">
+        <div class="card-body">
+          <h3>Lapras Max Bottle Weekend Ultra Box</h3>
+          <p>Can only be purchased 1 time.</p>
+          <button class="custom-btn2" style="margin-top: 29px;">₱289.00</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="items" class="shop-section" style="display: none;" align="center">
+     <h5>Items</h5>
+    <div class="items">
+      <div class="box">
+        <img src="items/item.png" width="350px">
+        <div class="card-body">
+          <h3>Max Particle Packs + Remove Raid Packs</h3>
+          <button class="custom-btn2" style="margin-top: 29px;">₱88.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="items/item1.png" width="350px">
+        <div class="card-body">
+          <h3>3 Max Particle Packs + 3 Remove Raid Packs</h3>
+          <button class="custom-btn2" style="margin-top: 29px;">₱235.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="items/item2.png" width="350px">
+        <div class="card-body">
+          <h3>Lucky Egg</h3>
+          <button class="custom-btn2" style="margin-top: 29px;">₱149.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="items/item3.png" width="350px">
+        <div class="card-body">
+          <h3>Star Piece</h3>
+          <button class="custom-btn2" style="margin-top: 29px;">₱175.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="items/item4.png" width="350px">
+        <div class="card-body">
+          <h3>Remote Raid Pass</h3>
+          <button class="custom-btn2" style="margin-top: 29px;">₱88.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="items/item5.png" width="350px">
+        <div class="card-body">
+          <h3>Pokémon Storage</h3>
+          <button class="custom-btn2" style="margin-top: 29px;">₱59.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="items/item6.png" width="350px">
+        <div class="card-body">
+          <h3>Item Bag</h3>
+          <button class="custom-btn2" style="margin-top: 29px;">₱59.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="items/item7.png" width="350px">
+        <div class="card-body">
+          <h3>Egg Incubator</h3>
+          <button class="custom-btn2" style="margin-top: 29px;">₱88.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="items/item8.png" width="350px">
+        <div class="card-body">
+          <h3>Super Incubator</h3>
+          <button class="custom-btn2" style="margin-top: 29px;">₱88.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="items/item9.png" width="350px">
+        <div class="card-body">
+          <h3>Max Revive</h3>
+          <button class="custom-btn2" style="margin-top: 29px;">₱59.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="items/item10.png" width="350px">
+        <div class="card-body">
+          <h3>Premium Battle Pass</h3>
+          <button class="custom-btn2" style="margin-top: 29px;">₱88.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="items/item11.png" width="350px">
+        <div class="card-body">
+          <h3>Max Particle Pack</h3>
+          <button class="custom-btn2" style="margin-top: 29px;">₱235.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="items/item12.png" width="350px">
+        <div class="card-body">
+          <h3>Max Mushroom</h3>
+          <button class="custom-btn2" style="margin-top: 29px;">₱289.00</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="coins" class="shop-section" style="display: none;" align="center">
+    <h5>PokéCoins</h5>
+    <div class="items">
+      <div class="box">
+        <img src="coin/coins.png" width="400px">
+        <div class="card-body">
+          <h3>110 PokéCoins</h3>
+          <p>10 Web Store Bonus Coins.</p>
+          <button class="custom-btn2" style="margin-top: 29px;">₱29.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="coin/coins1.png" width="400px">
+        <div class="card-body">
+          <h3>600 PokéCoins</h3>
+          <p>50 Web Store Bonus Coins</p>
+          <button class="custom-btn2" style="margin-top: 29px;">₱149.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="coin/coins2.png" width="400px">
+        <div class="card-body">
+          <h3>1,300 PokéCoins</h3>
+          <p>100 Web Store Bonus Coins</p>
+          <button class="custom-btn2" style="margin-top: 29px;">₱289.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="coin/coins3.png" width="400px">
+        <div class="card-body">
+          <h3>2,700 PokéCoins</h3>
+          <p>200 Web Store Bonus Coins</p>
+          <button class="custom-btn2" style="margin-top: 29px;">₱589.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="coin/coins4.png" width="400px">
+        <div class="card-body">
+          <h3>5,600 PokéCoins</h3>
+          <p>400 Web Store Bonus Coins</p>
+          <button class="custom-btn2" style="margin-top: 29px;">₱1,170.00</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="coin/coins5.png" width="400px">
+        <div class="card-body">
+          <h3>15,500 PokéCoins</h3>
+          <p>1,000 Web Store Bonus Coins</p>
+          <button class="custom-btn2" style="margin-top: 29px;">₱2,950.00</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="daily" class="shop-section" style="display: none;" align="center">
+    <h5>Daily Bundles</h5>
+    <div class="items">
+      <div class="box">
+        <img src="mys/mystery.png" width="1400px">
+        <div class="card-body">
+          <h3>Mystery Boxes</h3>
+          <p>3 Daily Boxes.</p>
+          <button class="custom-btn2" style="margin-top: 29px;">₱289.00</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="poke">
+    <img src="logo/pokemon.png">
+  </div>
+
+  <div class="bot-banner">
+    
+     <div class="row">
+      <div class="list">
+        <h1>Meet The Team:</h1>
+        <a>Dar, Luiz</a>
+        <a>Dela Cruz, Darrel</a>
+        <a>Tucay, Nicole</a>
+      </div>
+      
+        <div>
+          <img src="logo/saja.PNG" width="200px">
+        </div>
+
+    </div>
+
+    <div>
+      <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 200; letter-spacing: 4px; color: white; font-weight: bold; font-size: 14px; text-align: center;">CONTACT US ON:</h1>
+    </div>
+
+  <div class="footer-line-section">
+    <hr>
+      <div class="links">
+        <span class="fake-link">GMAIL</span>
+        <span class="fake-link">TWITTER</span>
+        <span class="fake-link">INSTAGRAM</span>
+        <span class="fake-link">FACEBOOK</span>
+      </div>
+    <hr>
+  </div>
+    
+    <div class="row1">
+      <div class="intro">
+        <h1>Welcome to the Pokémon GO Webstore!</h1>
+        <a>We’re passionate trainers just like you! Built by Saja Babies, this is your one-stop shop for unique Pokémon GO merchandise, helpful in-game resources, and trainer-friendly services.</a>
+      </div>
+    </div>
+    
+    <div class="row1">
+      <div class="intro">
+        <h1>Our Mission</h1>
+        <a>To help every trainer level up with style, gear, and exclusive offers. Whether you're new to the journey or already a Pokémon Master, we've got something just for you!</a>
+      </div>
+    </div>
+
+
+</div>
+
+  <script>
+    function showShop() {
+      document.getElementById("shop-preview").style.display = "block";
+
+      const buttons = document.querySelectorAll('.custom-btn');
+      buttons.forEach(btn => btn.classList.remove('active-tab'));
+
+      document.getElementById("shop-button").classList.add("active-tab");
+    }
+
+    function showTab(tabId) {
+      document.querySelectorAll('.shop-section').forEach(section => {
+        section.style.display = "none";
+      });
+
+      document.getElementById(tabId).style.display = "block";
+
+      document.querySelectorAll('.custom-btn1').forEach(btn => {
+        btn.classList.remove('active-tab');
+      });
+
+      const activeBtn = document.querySelector(`#${tabId}-button`);
+      if (activeBtn) {
+        activeBtn.classList.add('active-tab');
+      }
+    }
+
+    window.onload = function () {
+      showShop();
+      showTab('limited');
+    };
+  </script>
+
+</body>
+</html>

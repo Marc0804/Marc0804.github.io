@@ -1,0 +1,458 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f5f5f5;
+      height: 100vh;
+    }
+
+
+    .stay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 170px;
+}
+
+    .top-nav {
+      background: linear-gradient(to right, #00c9ff, #1a237e) ;
+      height: 70px;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top-nav .logo{
+      position: absolute;
+      left: 30px;
+      width: 115px;
+    }
+
+    .top-nav .menu {
+      flex-wrap: wrap;
+      display: flex;
+      gap: 20px;
+    }
+
+    .sub-banner{
+        background: linear-gradient(to right, rgb(40, 39, 39), black) ;
+        height: 30px;
+    }
+
+    .white-sub-banner{
+        background: linear-gradient(to bottom, white, transparent);
+        height: 70px;
+    }
+
+    .overlapimage{
+        width: 80px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin: -10px auto 0;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    .imagecon{
+        position:relative;
+        height: 0;
+    }
+
+    .custom-btn{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        padding: 10px 20px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .custom-btn:hover{
+        background: linear-gradient(to right, rgb(247, 78, 78), rgb(188, 42, 42));
+        color: rgb(255, 255, 255);
+        border: 2px solid white;
+        border-radius: 25px ;
+    }
+
+    .custom-btn.active-tab {
+        background: linear-gradient(to right, rgb(247, 78, 78), rgb(188, 42, 42));
+        color: rgb(255, 255, 255);
+        border: 2px solid white;
+        border-radius: 25px ;
+    }
+
+    #shop-preview{
+        display: none;
+        background-color: #f3f3f3;
+        margin-top: 20px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .custom-btn1{
+        font-family: 'Segeo UI', sans-serif;
+        padding: 12px 24px;
+        background-color: transparent;
+        color: rgb(43, 121, 125);
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .custom-btn1:hover{
+        background: linear-gradient(to right, rgb(64, 138, 170) ,rgb(90, 212, 206)) ;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 25px ;
+    }
+
+    .custom-btn1.active-tab {
+        background: linear-gradient(to right, rgb(64, 138, 170) ,rgb(90, 212, 206)) ;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 25px ;
+    }
+
+
+    .sign{
+        font-family: 'Segeo UI', sans-serif;
+        padding: 12px 24px;
+        background: linear-gradient(to right, rgb(64, 138, 170) ,rgb(90, 212, 206));
+        color: rgb(255, 255, 255);
+        border: 2px solid white;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .sign:hover{
+        background: linear-gradient(to right, rgb(247, 78, 78), rgb(188, 42, 42));
+        color: rgb(255, 255, 255);
+        border: 2px solid white;
+        border-radius: 25px ;
+    }
+
+    .sign.active-tab {
+        background: linear-gradient(to right, rgb(247, 78, 78), rgb(188, 42, 42));
+        color: rgb(255, 255, 255);
+        border: 2px solid white;
+        border-radius: 25px ;
+    }
+
+
+    .main-content {
+      background-color: rgba(255, 255, 255, 0.7);
+      border: 3px solid white;
+      border-radius: 25px;
+      padding-left: 50px;
+      height: 450px;
+      width: 800px;
+      margin: 115px auto;
+      font-family: 'Segeo UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .main-content h1 {
+        width: 600px;
+      font-size: 2.7em;
+      color: #212121;
+    }
+
+    .main-content p {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      width: 600px;
+      font-size: 18px;
+      color: #555;
+    }
+
+
+.video-banner {
+  margin-top: 170px;
+  position: relative;
+  width: 100%;
+  height: 95%;
+  overflow: hidden;
+}
+
+.video-banner video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  opacity: 0.5;
+}
+
+
+.fade-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fade-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.9), transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-menu{
+    display: none;
+    font-size: 20px;
+    width: 300px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #00c9ff ;
+    padding: 10px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.dropdown-menu a{
+    color: white;
+    text-decoration: none;
+    align-content: center;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+#sticky-buttons {
+  position: fixed;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  transition: top 0.3s ease;
+}
+
+.items{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 15px;
+}
+
+.item1{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-body {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+.card-body h3 {
+  width: 300px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #234;
+}
+
+.card-body p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 80px;
+}
+
+.box{
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.box img{
+  border-radius: 10px 10px 0 0;
+}
+
+
+
+
+ .custom-btn2{
+        font-family: 'Segeo UI', sans-serif;
+        padding: 12px 24px;
+        background: linear-gradient(to right, rgb(64, 138, 170) ,rgb(90, 212, 206)) ;
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .custom-btn2:hover{
+         background: linear-gradient(to right, rgb(247, 78, 78), rgb(188, 42, 42));
+        color: rgb(255, 255, 255);
+        border: 2px solid white;
+        border-radius: 25px ;
+    }
+
+    .custom-btn2.active-tab {
+         background: linear-gradient(to right, rgb(247, 78, 78), rgb(188, 42, 42));
+        color: rgb(255, 255, 255);
+        border: 2px solid white;
+        border-radius: 25px ;
+    }
+  .poke{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+  }
+
+  h5{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(19, 91, 107);
+  }
+
+  .row{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 90px 10px;
+  }
+
+  .row1{
+    color: white;
+    text-align: center;
+    padding: 15px 31% 50px;
+  }
+
+  .row1 h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .row1 a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+
+  .row h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .row a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+  
+  .bot-banner{
+  margin-top: 10%;
+  background: linear-gradient(to right, #00c9ff, #1a237e) ;
+  height: auto;
+  }
+
+  .intro{
+    width: 550px;
+  }
+
+  .footer-line-section {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-line-section hr {
+  border: none;
+  border-top: 1px solid white;
+  margin: 10px auto;
+  width: 95%;
+}
+
+.links {
+  font-size: 12px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.fake-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  letter-spacing: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fake-link:hover {
+  text-decoration: underline;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
