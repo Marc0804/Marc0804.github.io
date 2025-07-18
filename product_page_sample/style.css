@@ -375,11 +375,16 @@
     padding: 90px 90px 10px;
   }
 
-  .row1{
-    color: white;
-    text-align: center;
-    padding: 15px 31% 50px;
-  }
+  .row1 {
+  display: flex; /* Add this */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 40px; /* Optional: adds space around the content */
+}
+
 
   .row1 h1{
     font-family: 'Montserrat', sans-serif;
@@ -407,7 +412,7 @@
     font-size: 16px;
   }
   
-  .bot-banner{
+  #bot-banner{
   margin-top: 10%;
   background: linear-gradient(to right, #00c9ff, #1a237e) ;
   height: auto;
